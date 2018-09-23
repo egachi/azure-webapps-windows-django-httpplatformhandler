@@ -98,7 +98,7 @@ echo Detected requirements.txt. RUNNING CUSTOM DEPLOYMENT
 
 :: 2. Install packages
 echo Pip install requirements.
-call "%PYTHON_EXE%" -m pip install --upgrade -r requirements.txt
+"%PYTHON_EXE%" -m pip install --upgrade -r requirements.txt
 IF !ERRORLEVEL! NEQ 0 goto error
 
 popd
